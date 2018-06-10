@@ -6,27 +6,18 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li>
-              <a href="info.html">ИНФОРМАЦИЯ</a>
-            </li>
-            <li>
-              <a href="#">ФОТО И ВИДЕО</a>
-            </li>
-            <li>
-              <a class="logo" href="index.html" >
-                <img src="img/sedona-logo.png" alt="Седона">
-              </a>
-            </li>
-            <li>
-              <a href="#">КАРТА ШТАТА</a>
-            </li>
-            <li>
-              <a href="catalog.html">ГОСТИНИЦЫ</a>
-            </li>
-          </ul>
-      </nav>
+        <!-- Логотипу можно задать абсолютное позиционирование и выровнять по центру. -->
+        <a class="logo" href="index.html" >
+            <img src="img/sedona-logo.png" alt="Седона">
+        </a>
+        <nav class="main-navigation">
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="catalog.html">Гостиницы</a></li>
+            </ul>
+        </nav>
     </header>
     
     <main class="main">
@@ -59,45 +50,39 @@
                     <span class="range-slider">Слайдер диапазона</span>
                 </div>
                 <div>
-                    <span class="hotels-filters-apply">Показать</span>
+                    <button class="hotels-filters-apply">Показать</button>
                 </div>
             </div>
         </section>
 
         <section class="hotels">
             <h2 class="visually-hidden">Результаты поиска отелей в Седоне</h2>
+            <span class="hotels-sort-result-count">Найдено: 3</span>
             
             <section class="hotels-sort">
                 <h3 class="visually-hidden">Сортировка результатов</h3>
-                <div class="hotels-sort-result">
-                    <span class="hotels-sort-result-count">Найдено: 3</span>
-                </div>
-                <div class="hotels-sort-type">
-                    <ul class="hotels-sort-type-list">
-                        <li class="hotels-sort-type-list">
-                            Сортировка:
-                        </li>
-                        <li class="hotels-sort-type-list">
-                            <a href="#">По цене</a>
-                        </li>
-                        <li class="hotels-sort-type-list">
-                            <a href="#">По типу</a>
-                        </li>
-                        <li class="hotels-sort-type-list">
-                            <a href="#">По рейтингу</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hotels-updown-sort">
-                    <ul class="hotels-updown-sort-list">
-                        <li class="hotels-updown-sort-item">
-                            <span class="hotels-updown-sort-up" href="#">По возрастанию</span>
-                        </li>
-                        <li class="hotels-updown-sort-item">
-                            <span class="hotels-updown-sort-down" href="#">По убыванию</span>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="hotels-sort-type-list">
+                    <li class="hotels-sort-type-item">
+                        Сортировка:
+                    </li>
+                    <li class="hotels-sort-type-item">
+                        <a href="#">По цене</a>
+                    </li>
+                    <li class="hotels-sort-type-item">
+                        <a href="#">По типу</a>
+                    </li>
+                    <li class="hotels-sort-type-item">
+                        <a href="#">По рейтингу</a>
+                    </li>
+                </ul>
+                <ul class="hotels-sort-direction">
+                    <li class="hotels-sort-direction-item">
+                        <button class="hotels-sort-up" type="button">По возрастанию</button>
+                    </li>
+                    <li class="hotels-sort-direction-item">
+                        <button class="hotels-sort-down" type="button">По убыванию</button>
+                    </li>
+                </ul>
             </section>
 
             <ul class="hotels-sorted-list">
@@ -109,10 +94,10 @@
                         <h3>Amara Resort &amp; Spa</h3>
                         <div class="hotels-item-info">
                             <span class="hotels-item-type">Гостиница</span>
-                            <span class="hotels-item-price">от 4000 Р.</span>
+                            <span class="hotels-item-price">Подробнее</span>
                         </div>
                         <div class="hotels-item-links">
-                            <a class="hotels-item-links-info" href="#">Подробнее</a>
+                            <a class="hotels-item-links-info" href="#">от 4000 р.</a>
                             <a class="hotels-item-links-booking" href="#">Забронировать</a>
                         </div>
                     </div>
@@ -134,10 +119,10 @@
                         <div class="hotels-item-info">
                             <h3>Desert Quail Inn</h3>
                             <span class="hotels-item-type">Мотель</span>
-                            <span class="hotels-item-price">от 3000 Р.</span>
+                            <span class="hotels-item-price">Подробнее</span>
                         </div>
                         <div class="hotels-item-links">
-                            <a class="hotels-item-links-info" href="#">Подробнее</a>
+                            <a class="hotels-item-links-info" href="#">от 3000 р.</a>
                             <a class="hotels-item-links-booking" href="#">Забронировать</a>
                         </div>
                     </div>
@@ -158,10 +143,10 @@
                         <div class="hotels-item-info">
                             <h3>Villas at Poco Diablo</h3>
                             <span class="hotels-item-type">Апартаменты</span>
-                            <span class="hotels-item-price">от 2000 Р.</span>
+                            <span class="hotels-item-price">Подробнее</span>
                         </div>
                         <div class="hotels-item-links">
-                            <a class="hotels-item-links-info" href="#">Подробнее</a>
+                            <a class="hotels-item-links-info" href="#">от 2000 р.</a>
                             <a class="hotels-item-links-booking" href="#">Забронировать</a>
                         </div>
                     </div>
@@ -178,24 +163,26 @@
     </main>
 
     <footer>
-      <p>
-        <a href="#">#VISITSEDONA</a>
-      </p>
-      <ul>
-        <li>
-          <a href="#"><img src="img/twitter.png"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/facebook.png"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/youtube.png"></a>
-        </li>
-      </ul>
-      <p>
-        WEBSITE BY 
-        <img src="img/html-academy-logo.png" alt="HTML Academy">
-      </p>
+        <p>
+            <a href="#">#VISITSEDONA</a>
+        </p>
+        <ul>
+            <li>
+            <a href="https://twitter.com/"><img src="img/twitter.png" alt="Перейти в Twitter"></a>
+            </li>
+            <li>
+            <a href="https://facebook.com/"><img src="img/facebook.png" alt="Перейти в Facebook"></a>
+            </li>
+            <li>
+            <a href="https://www.youtube.com/"><img src="img/youtube.png" alt="Перейти в Youtube"></a>
+            </li>
+        </ul>
+        
+        <!-- 3.8. Логотип Академии в подвале ведёт на лендинг интенсива «Профессиональный HTML и CSS, уровень 1». -->
+        <p>
+            WEBSITE BY 
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy-logo.png" alt="HTML Academy"></a>
+        </p>
     </footer>
   </body>
 </html>

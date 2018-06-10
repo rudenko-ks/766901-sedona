@@ -6,25 +6,16 @@
   </head>
   <body>
     <header class="main-header">
+      <!-- Логотипу можно задать абсолютное позиционирование и выровнять по центру. -->
+      <a class="logo" href="index.html" >
+          <img src="img/sedona-logo.png" alt="Седона">
+      </a>
       <nav class="main-navigation">
           <ul class="site-navigation">
-            <li>
-              <a href="info.html">ИНФОРМАЦИЯ</a>
-            </li>
-            <li>
-              <a href="#">ФОТО И ВИДЕО</a>
-            </li>
-            <li>
-              <a class="logo" href="index.html" >
-                <img src="img/sedona-logo.png" alt="Седона">
-              </a>
-            </li>
-            <li>
-              <a href="#">КАРТА ШТАТА</a>
-            </li>
-            <li>
-              <a href="catalog.html">ГОСТИНИЦЫ</a>
-            </li>
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
       </nav>
     </header>
@@ -32,17 +23,18 @@
     <main class="main">
       <h1 class="visually-hidden">Сайт города Седона</h1>
       <section class="main-banner">
+        <h2 class="visually-hidden">Приветствие</h2>
         <div class="main-banner-image">
           <img src="img/main-banner.jpg" alt="Добро пожаловать в Седону!">
-        </div>
-        <div class="main-banner-welcome">
-          <p class="main-banner-description">CЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
-          <p class="main-banner-reasons">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
         </div>
       </section>
     
       <section class="main-advantages">
           <h2 class="visually-hidden">Преимущества отдыха в Седоне!</h2>
+          <div class="main-banner-welcome">
+            <p class="main-banner-description">Cедона — небольшой городок в аризоне, заслуживающий большего!</p>
+            <p class="main-banner-reasons">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
+          </div>
           <ul>
               <li class="main-features-item">
                   <div>
@@ -55,65 +47,107 @@
                   </div>
               </li>
               <li class="main-features-item">
-                  <h3>ЖИЛЬЁ</h3>
-                  <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+                  <h3>Жильё</h3>
+                  <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="main-features-item">
-                  <h3>ЕДА</h3>
-                  <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                  <h3>Еда</h3>
+                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="main-features-item">
-                  <h3>СУВЕНИРЫ</h3>
-                  <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+                  <h3>Сувениры</h3>
+                  <p>Не только китайского, но и местного производства!</p>
               </li>
               <li class="main-features-item">
-                  <div>
-                      <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
-                      <p>- №2 -</p>
-                      <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
-                  </div>
                   <div class="main-advantages-image">
                       <img src="img/country-view.jpg" alt="Каньон в Седоне">
                   </div>
+                  <div>
+                      <h3>Там есть мост дьявола</h3>
+                      <p>- №2 -</p>
+                      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                  </div>
               </li>
               <li class="main-features-item">
-                  <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                  <h3>Небольшая площадь</h3>
                   <p>- №3 -</p>
-                  <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+                  <p>Все достопримечательности находятся очень близко</p>
               </li>
               <li class="main-features-item">
-                  <h3>КРАСИВАЯ ДОРОГА</h3>
+                  <h3>Красивая дорога</h3>
                   <p>- №4 -</p>
-                  <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+                  <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
               </li>
               <li class="main-features-item">
-                  <h3>МАЛО ТУРИСТОВ</h3>
+                  <h3>Мало туристов</h3>
                   <p>- №5 -</p>
-                  <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+                  <p>Большинство едет в гранд каньон и толпится там</p>
               </li>    
           </ul>
+      </section>
+
+      <section class="search">
+        <h3 class="search-title">Заинтересовались?</h3>
+        <p class="search-text">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <button class="search-button-popup" type="button" name="search-open">Поиск гостиницы в Седоне</button>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="search-form-item">
+                Дата заезда:
+                <input type="text" name="date-arrival" value="0" placeholder="10.06.2018">
+            </p>
+            <p class="search-form-item">
+                Дата выезда:
+                <input type="text" name="date-departure" value="0" placeholder="10.06.2018">
+            </p>
+            <div class="search-form-item">
+                <div class="adults-input">
+                    <label class="search-form-label-children">Взрослые:</label>
+                    <button class="button-step-down" type="button">-</button>
+                    <input type="number" name="number-adults" min="0" value="1">
+                    <button class="button-step-up" type="button">+</button>
+                </div>
+                <div class="children-input">
+                    <label class="search-form-label-children">Дети:</label>
+                    <button class="button-step-down" type="button">-</button>
+                    <input type="number" name="number-children" min="0" value="0">
+                    <button class="button-step-up" type="button">+</button>
+                </div>
+            </div>
+            <button class="search-form-button-send" type="submit" name="search-open">Найти</button>
+        </form>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта расположения Седоны</h2>
+        <p>
+            <img src="img/map-sedona.jpg" alt="Седона на карте">
+        </p>
       </section>
     </main>
 
     <footer>
-      <p>
-        <a href="#">#VISITSEDONA</a>
-      </p>
-      <ul>
-        <li>
-          <a href="#"><img src="img/twitter.png"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/facebook.png"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/youtube.png"></a>
-        </li>
-      </ul>
-      <p>
-        WEBSITE BY 
-        <img src="img/html-academy-logo.png" alt="HTML Academy">
-      </p>
+        <p>
+          <a href="#">#VISITSEDONA</a>
+        </p>
+        <ul>
+          <li>
+            <a href="https://twitter.com/"><img src="img/twitter.png" alt="Перейти в Twitter"></a>
+          </li>
+          <li>
+            <a href="https://facebook.com/"><img src="img/facebook.png" alt="Перейти в Facebook"></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/"><img src="img/youtube.png" alt="Перейти в Youtube"></a>
+          </li>
+        </ul>
+        
+        <!-- 3.8. Логотип Академии в подвале ведёт на лендинг интенсива «Профессиональный HTML и CSS, уровень 1». -->
+        <p>
+          WEBSITE BY 
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy-logo.png" alt="HTML Academy"></a>
+        </p>
     </footer>
   </body>
 </html>
