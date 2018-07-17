@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="main-header">
         <!-- Логотипу можно задать абсолютное позиционирование и выровнять по центру. -->
-        <a class="logo" href="index.html" >
+        <a class="logo" href="index.html">
             <img src="img/sedona-logo.png" alt="Седона">
         </a>
         <nav class="main-navigation">
             <ul class="site-navigation">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+                <li>
+                    <a href="info.html">Информация</a>
+                </li>
+                <li>
+                    <a href="#">Фото и видео</a>
+                </li>
+                <li>
+                    <a href="#">Карта штата</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Гостиницы</a>
+                </li>
             </ul>
         </nav>
     </header>
-    
+
     <main class="main">
         <section class="hotels-filters">
             <h1 class="visually-hidden">Поиск отелей в Седоне</h1>
@@ -27,13 +37,16 @@
                 <h2>Инфраструктура:</h2>
                 <ul class="infrastructure-list">
                     <li class="infrastructure-list-item">
-                        <label><img src="img/icon-checkbox-on.svg">Бассейн</label>
+                        <label>
+                            <img src="img/icon-checkbox-on.svg">Бассейн</label>
                     </li>
                     <li class="infrastructure-list-item">
-                            <label><img src="img/icon-checkbox-off.svg">Парковка</label>
+                        <label>
+                            <img src="img/icon-checkbox-off.svg">Парковка</label>
                     </li>
                     <li class="infrastructure-list-item">
-                            <label><img src="img/icon-checkbox-off.svg">Wi-Fi</label>
+                        <label>
+                            <img src="img/icon-checkbox-off.svg">Wi-Fi</label>
                     </li>
                 </ul>
             </div>
@@ -41,13 +54,16 @@
                 <h2>Тип жилья:</h2>
                 <ul class="hotels-type-list">
                     <li class="infrastructure-list-item">
-                        <label><img src="img/icon-checkbox-on.svg">Гостиница</label>
+                        <label>
+                            <img src="img/icon-checkbox-on.svg">Гостиница</label>
                     </li>
                     <li class="infrastructure-list-item">
-                            <label><img src="img/icon-checkbox-on.svg">Мотель</label>
+                        <label>
+                            <img src="img/icon-checkbox-on.svg">Мотель</label>
                     </li>
                     <li class="infrastructure-list-item">
-                            <label><img src="img/icon-checkbox-on.svg">Апартаменты</label>
+                        <label>
+                            <img src="img/icon-checkbox-on.svg">Апартаменты</label>
                     </li>
                 </ul>
             </div>
@@ -55,8 +71,12 @@
             <div class="hotels-filters-price">
                 <h2>Стоимость в сутки (Р):</h2>
                 <div class="hotels-filters-price-range">
-                    <span class="range-min"><img src="img/icon-slider.svg" alt="От"></span>
-                    <span class="range-max"><img src="img/icon-slider.svg" alt="До"></span>
+                    <span class="range-min">
+                        <img src="img/icon-slider.svg" alt="От">
+                    </span>
+                    <span class="range-max">
+                        <img src="img/icon-slider.svg" alt="До">
+                    </span>
                 </div>
                 <div>
                     <span class="range-slider">Слайдер диапазона</span>
@@ -70,7 +90,7 @@
         <section class="hotels">
             <h2 class="visually-hidden">Результаты поиска отелей в Седоне</h2>
             <span class="hotels-sort-result-count">Найдено: 3</span>
-            
+
             <section class="hotels-sort">
                 <h3 class="visually-hidden">Сортировка результатов</h3>
                 <ul class="hotels-sort-type-list">
@@ -89,10 +109,14 @@
                 </ul>
                 <ul class="hotels-sort-direction">
                     <li class="hotels-sort-direction-item">
-                        <a href="#" class="hotels-sort-up"><img src="img/icon-dir-up.svg" alt="По возрастанию"></a>
+                        <a href="#" class="hotels-sort-up">
+                            <img src="img/icon-dir-up.svg" alt="По возрастанию">
+                        </a>
                     </li>
                     <li class="hotels-sort-direction-item">
-                        <a href="#" class="hotels-sort-down"><img src="img/icon-dir-down.svg" alt="По убыванию"></a>
+                        <a href="#" class="hotels-sort-down">
+                            <img src="img/icon-dir-down.svg" alt="По убыванию">
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -115,10 +139,18 @@
                     </div>
                     <div class="hotels-item-rating">
                         <ul class="hotels-item-rating-stars">
-                            <li class="item-star"><img src="img/icon-star.svg"></li>
-                            <li class="item-star"><img src="img/icon-star.svg"></li>
-                            <li class="item-star"><img src="img/icon-star.svg"></li>
-                            <li class="item-star"><img src="img/icon-star.svg"></li>
+                            <li class="item-star">
+                                <img src="img/icon-star.svg">
+                            </li>
+                            <li class="item-star">
+                                <img src="img/icon-star.svg">
+                            </li>
+                            <li class="item-star">
+                                <img src="img/icon-star.svg">
+                            </li>
+                            <li class="item-star">
+                                <img src="img/icon-star.svg">
+                            </li>
                         </ul>
                         <span class="hotel-rating">Рейтинг: 8,5</span>
                     </div>
@@ -140,9 +172,15 @@
                     </div>
                     <div class="hotels-item-rating">
                         <ul class="hotels-item-rating-stars">
-                            <li class="item-star"><img src="img/icon-star.svg"></li>
-                            <li class="item-star"><img src="img/icon-star.svg"></li>
-                            <li class="item-star"><img src="img/icon-star.svg"></li>
+                            <li class="item-star">
+                                <img src="img/icon-star.svg">
+                            </li>
+                            <li class="item-star">
+                                <img src="img/icon-star.svg">
+                            </li>
+                            <li class="item-star">
+                                <img src="img/icon-star.svg">
+                            </li>
                         </ul>
                         <span class="hotel-rating">Рейтинг: 8,9</span>
                     </div>
@@ -164,8 +202,12 @@
                     </div>
                     <div class="hotels-item-rating">
                         <ul class="hotels-item-rating-stars">
-                            <li class="item-star"><img src="img/icon-star.svg"></li>
-                            <li class="item-star"><img src="img/icon-star.svg"></li>
+                            <li class="item-star">
+                                <img src="img/icon-star.svg">
+                            </li>
+                            <li class="item-star">
+                                <img src="img/icon-star.svg">
+                            </li>
                         </ul>
                         <span class="hotel-rating">Рейтинг: 9,2</span>
                     </div>
@@ -180,21 +222,30 @@
         </p>
         <ul>
             <li>
-            <a href="https://twitter.com/"><img src="img/icon-twitter.svg" alt="Перейти в Twitter"></a>
+                <a href="https://twitter.com/">
+                    <img src="img/icon-twitter.svg" alt="Перейти в Twitter">
+                </a>
             </li>
             <li>
-            <a href="https://facebook.com/"><img src="img/icon-facebook.svg" alt="Перейти в Facebook"></a>
+                <a href="https://facebook.com/">
+                    <img src="img/icon-facebook.svg" alt="Перейти в Facebook">
+                </a>
             </li>
             <li>
-            <a href="https://www.youtube.com/"><img src="img/icon-youtube.svg" alt="Перейти в Youtube"></a>
+                <a href="https://www.youtube.com/">
+                    <img src="img/icon-youtube.svg" alt="Перейти в Youtube">
+                </a>
             </li>
         </ul>
-        
+
         <!-- 3.8. Логотип Академии в подвале ведёт на лендинг интенсива «Профессиональный HTML и CSS, уровень 1». -->
         <p>
-            WEBSITE BY 
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-academy.svg" width="70" alt="HTML Academy"></a>
+            WEBSITE BY
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/logo-html-academy.svg" width="70" alt="HTML Academy">
+            </a>
         </p>
     </footer>
-  </body>
+</body>
+
 </html>

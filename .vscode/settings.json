@@ -1,15 +1,17 @@
 {
-    "cSpell.language": "en,ru",
-    "cSpell.words": [
-        "amara",
-        "cедона",
-        "sedona",
-        "visitsedona",
-        "интенсива",
-        "лендинг",
-        "седона",
-        "седоне",
-        "седону",
-        "седоны"
-    ]
+  "cSpell.language": "en,ru",
+  "cSpell.words": [
+    "amara",
+    "cедона",
+    "sedona",
+    "visitsedona",
+    "интенсива",
+    "лендинг",
+    "седона",
+    "седоне",
+    "седону",
+    "седоны"
+  ],
+  "editor.formatOnSave": true,
+  "prettier.semi": true
 }
